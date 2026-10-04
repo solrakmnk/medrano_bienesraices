@@ -1,6 +1,6 @@
 # Publicar la demo en Railway
 
-La aplicación se construye con el Dockerfile incluido: PHP 8.4, Apache, dependencias de producción y assets compilados con Node 22. Railway lee `railway.json`, ejecuta las migraciones antes de arrancar y comprueba `/up`. No necesitas un proceso Vite ni un worker para esta demo.
+La aplicación se construye con el Dockerfile incluido: PHP 8.4, Apache, dependencias de producción y assets compilados con Node 22. En Railway se configura `Dockerfile` como ruta de construcción, `sh railway-predeploy.sh` como comando previo y `/up` como comprobación de salud. El servicio conectado ya tiene estos ajustes. No necesitas un proceso Vite ni un worker para esta demo.
 
 ## 1. Crear los servicios
 
@@ -62,6 +62,6 @@ Los favoritos se guardan en el navegador. El mapa, servicios, rutas, propiedades
 
 La preparación se validó construyendo la imagen Docker, ejecutando migraciones y seeder contra MySQL 8.4, y comprobando inicio, catálogo y `/up` con respuestas HTTP 200. Pasan las 13 pruebas automatizadas.
 
-Proyecto Railway: `MC Inmobiliaria Demo`. Dominio: https://inmobiliaria-production-fb80.up.railway.app. Las variables y la clave de producción se guardan en Railway.
+Proyecto Railway: `demo_mc`. Dominio: https://demo-mc.up.railway.app. Las variables y la clave de producción se guardan en Railway.
 
 Referencias oficiales: [Laravel en Railway](https://docs.railway.com/guides/laravel), [configuración como código](https://docs.railway.com/reference/config-as-code), [MySQL](https://docs.railway.com/databases/mysql).
