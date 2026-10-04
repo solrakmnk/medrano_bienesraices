@@ -6,7 +6,7 @@ La aplicación se construye con el Dockerfile incluido: PHP 8.4, Apache, depende
 
 En un proyecto nuevo de Railway añade **MySQL** y un servicio para esta aplicación. Mantén ambos en el mismo proyecto y entorno para usar la conexión privada.
 
-El repositorio de esta demo es [solrakmnk/medrano_bienesraices](https://github.com/solrakmnk/medrano_bienesraices), rama `main`. Railway se conecta a esa rama para desplegar sus actualizaciones. Nunca subas `.env`.
+El repositorio de esta demo es [solrakmnk/medrano_bienesraices](https://github.com/solrakmnk/medrano_bienesraices), rama `main`. El servicio está conectado a ese repositorio. Los despliegues automáticos requieren autorizar el acceso de Railway en GitHub; la API indica que ese permiso todavía falta. Por ahora las actualizaciones se despliegan manualmente. Nunca subas `.env`.
 
 También puedes subir la carpeta directamente con la CLI ya instalada:
 
