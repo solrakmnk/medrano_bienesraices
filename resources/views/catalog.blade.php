@@ -1,0 +1,1 @@
+<x-layout title="Propiedades · MC Facilitadores"><section class="catalog-heading section"><p class="eyebrow">TU PRÓXIMO CAPÍTULO</p><h1>Un lugar para <em>tu vida.</em></h1><p>Casas y departamentos en Querétaro. Encuentra lo que hace sentido para ti.</p></section><livewire:property-catalog /></x-layout>

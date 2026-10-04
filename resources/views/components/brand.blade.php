@@ -1,0 +1,2 @@
+@props(['inverse' => false])
+<span class="brand-lockup"><svg class="brand-symbol" viewBox="0 -4 68 50" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="square"><path d="M8 36V17l13 13 13-13v19"/><path d="M60 19a12 12 0 1 0 0 15"/><path d="M7 11 34 0l27 11" class="roof"/></g></svg><span class="brand-wordmark">MC Facilitadores<span class="brand-descriptor">INMOBILIARIOS</span></span></span>
