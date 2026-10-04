@@ -9,6 +9,9 @@ if [ "$PORT" -lt 1 ] || [ "$PORT" -gt 65535 ]; then
 fi
 printf 'Listen %s\n' "$PORT" > /etc/apache2/ports.conf
 sed -i "s/<VirtualHost \*:80>/<VirtualHost *:$PORT>/" /etc/apache2/sites-available/000-default.conf
+a2dismod mpm_event mpm_worker > /dev/null
+a2enmod mpm_prefork > /dev/null
+apache2ctl -t
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
